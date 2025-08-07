@@ -1,4 +1,4 @@
-import React from "react";
+
 import Typewriter from "typewriter-effect";
 
 function Type() {
@@ -6,11 +6,11 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "Software Developer",
+          "Software  Writer",
           "Freelancer",
-          "MERN Stack Developer",
-          "Open Source Contributor",
-        ],
+          "Network Technician",
+          "Upcoming VFX Artist"
+       ],
         autoStart: true,
         loop: true,
         deleteSpeed: 50,

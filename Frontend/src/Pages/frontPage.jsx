@@ -1,50 +1,47 @@
 import React from "react";
 import 'animate.css';
-import '/src/index.css';
-import Particles from "../Components/particle";
-
+import Type from "../ui/type";
+import Navbar from "../Components/Navbar";
+import App from "../ui/particle";
+import Profile from "../ui/profilecard";
 
 const FrontPage = () => {
-
-   
-    
-    return(
-        <div className="p-0 m-0 box-border-0 ">
-            <div
-                style={{ width: '100%', height: '100vh', position: 'absolute', top: 0, left: 0, zIndex: -1 }}
-                className="dark:bg-gray-800 bg-white  "
-            >
-            <Particles
-                particleColors={['#ffffff', '#ffffff']}
-                particleCount={400}
-                particleSpread={7}
-                speed={0.2}
-                particleBaseSize={100}
-                moveParticlesOnHover={true}
-                alphaParticles={false}
-                disableRotation={false}
-            />
-        </div >
-        <div className="flex justify-between relative dark:text-white text-black shadow-lg cursor-pointer">
-            <div className="absolute top-10 left-10 ">
-                <img src="" placeholder="pic"/>
-                <p className="text-lg font-bold ">Hello</p>
-            </div>
-            <div className="absolute right-10 top-10 flex flex-row gap-4">
-                <p className="text-lg font-bold">Portfolio</p>
-                <p className="text-lg font-bold">Web Developer</p>
-                <p className="text-lg font-bold">Hobbies</p>
-                <p className="text-lg font-bold">Gallery</p>
+  return (
+    <div className=" box-border relative min-h-screen w-full bg-white dark:bg-gray-800 m-0">
+      <App />
+        <Navbar />
+          <div className="flex flex-row justify-between relative top-40 left-15 w-300 center" >
+            <div className="flex flex-col gap-5 justify-center relative bottom-15 ">
+                <span className="text-white text-4xl">Hello, World</span>
+                <p  className="text-white text-6xl font-bold" >
+                My name is Tyrone Chama 
+                </p>
+            <div className="text-[2.0rem] text-white">
+              < Type />
+             </div>
+            </div> 
+            <div className="relative right-10 botto-20"> 
+              <Profile />
             </div>
          </div>
-         <div className="flex justify-center absolute top-50 field-sizing-fixed w-75 h-50 animate__animated animate__fadeInLeft transition delay-1500 duration-1800  ease-in rounded-lg bg-amber-200 left-10">
-            <p className="text-2xl font-bold dark:text-white text-black align-center">Welcome one and all to the amazing nigga that i am</p>
+         
+         <div className=" flex relative top-90 h-120 left-15 w-[90%] items-center justify-around ]">
+          <div className="h-80 w-80 bg-red-100 rounded-lg z-50">
+
+          </div>
+
+           <div className="h-80 w-80 bg-blue-100 rounded-lg">
+
+          </div>
+
+           <div className="h-80 w-80 bg-green-100 rounded-lg">
+
+          </div>
 
          </div>
        
-   </div>
- )
-}
-
+     </div> 
+  );
+};
 
 export default FrontPage;
