@@ -26,7 +26,7 @@ const Navbar = () => {
      <nav className="fixed top-0 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/40 z-50 border-b border-gray-900 shadow-lg" >
       <div className="container mx-auto px-4">
         <div className="flex h-20 items-center justify-between text-white">
-          <Link to="/" className="text-2xl font-bold relative left-5 top-2">
+          <Link to="/" className="text-2xl font-bold relative ml-5 mt-2">
             Tyrone Chama 
           </Link>
 
@@ -48,7 +48,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={toggleDropdown}
-            className="md:hidden sm:w-6 relative right-5 top-2 rounded-md text-white z-50"
+            className="md:hidden sm:w-6 relative mr-5 mt-2 rounded-md text-white z-50"
             aria-label="Toggle menu"
           >
            {selectedValue ||  <img src={assets.menu_icon} alt="Menu Icon" className=" h-10" />} 
@@ -85,7 +85,6 @@ const Navbar = () => {
         )}
          
       </div>
-  
     </nav>
 
   );
