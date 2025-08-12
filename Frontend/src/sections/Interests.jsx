@@ -4,7 +4,7 @@ import { FaNetworkWired, FaLaptopCode, FaCode } from "react-icons/fa";
 
 const Interests =()=>{
   return(
-    <div className=" h-140 grid grid-cols-2 gap-6 items-center justify-items-center pt-5 mb-10 shadow-lg text-white backdrop-blur bg-bg/30 border border-gray-500  rounded-lg">
+    <div className=" h-140 grid grid-cols-2 gap-6 items-center justify-items-center pt-5 mb-10 shadow-lg text-white backdrop-blur bg-bg/30 border border-gray-500 rounded-lg">
 
     <div className="bg-stone-600/80 p-2 rounded-md w-140 min-w-[200px] h-50 flex flex-col gap-3 hover:bg-stone-600 transition-colors">
       <div className="flex items-center gap-3 text-3xl font-semibold text-white">

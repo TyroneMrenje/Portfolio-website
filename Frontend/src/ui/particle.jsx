@@ -28,7 +28,7 @@ const App = () => {
           value: "#000000ff",
         },
       },
-      fpsLimit: 400,
+      fpsLimit: 200,
       interactivity: {
         events: {
           onClick: {

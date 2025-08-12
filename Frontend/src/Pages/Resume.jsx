@@ -46,7 +46,7 @@ const [pageNumber, setPageNumber] = useState(1);
   
 
    return(
-   <div className="w-full relative snap-center overflow-x-hidden scroll-smooth">
+   <div className="w-full relative overflow-x-hidden scroll-smooth">
       <App />
       <Navbar />
       <div className=" relative flex justify-center transition delay-50 duration-100 ease-in-out hover:-translate-y-1 hover:scale-110 mt-30 mr-10">
@@ -60,27 +60,13 @@ const [pageNumber, setPageNumber] = useState(1);
           <span>Download CV</span>
         </a>
       </div>
-       <div className="flex relative left-20 mt-10 justify-center">
+       <div className="flex relative mt-10 justify-center">
          <Document
          file={pdf} 
          onLoadSuccess={onDocumentLoadSuccess}
          >
-         <Page pageNumber={pageNumber} scale={width > 786 ? 1.4 : 0.4} />
+         <Page pageNumber={pageNumber} scale={width > 767 ? 1.2 : 0.5 } />
          </Document>
-         <div className="flex flex-col jusitfy-center items-center h-50 relative left-10">
-         <p className="text-white text-lg mt-2 font-semibold">Page {pageNumber} of {numPages}</p>
-          {pageNumber > 1 && (
-          <button onClick={changePageBack} className="h-10 w-35 mt-5 bg-white font-semibold text-gray-800 hover:bg-indigo-600 hover:text-white hover:cursor-pointer rounded">
-            Previous Page
-          </button>
-        )}
-
-        {pageNumber < numPages && (
-          <button onClick={changePageNext} className="h-10 w-35 mt-5 bg-white font-semibold text-gray-800 hover:bg-indigo-600 hover:text-white hover:cursor-pointer rounded">
-            Next Page
-          </button>
-        )}
-        </div>
       </div>
 
       <div className="relative flex justify-center transition delay-50 duration-100 ease-in-out hover:-translate-y-1 hover:scale-110 mt-10 mr-10">
