@@ -24,6 +24,13 @@ function Footer() {
       <div className="flex-1 md:ml-10">
         <span className="text-xl font-semibold block mb-2">Links</span>
         <div className="flex flex-col gap-2">
+           <Link 
+            to="/" 
+            className="text-lg transition duration-300 hover:text-orange-300"
+          >
+            Home
+          </Link>
+          
           <Link 
             to="/about"
             className="text-lg transition duration-300 hover:text-orange-300"
@@ -36,12 +43,7 @@ function Footer() {
           >
             Resume
           </Link>
-          <Link 
-            to="/contact" 
-            className="text-lg transition duration-300 hover:text-orange-300"
-          >
-            Contact
-          </Link>
+         
         </div>
       </div>
 

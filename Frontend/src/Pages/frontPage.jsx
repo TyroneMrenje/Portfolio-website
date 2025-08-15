@@ -45,7 +45,7 @@ const FrontPage = () => {
               crafting meaningful solutions. When I'm not coding, you'll find me 
               watching football, gaming, or enjoying animation.
               <br />
-              (Yes. Anime is cool 😎)
+              (Yes. I'm cool. I know😎)
             </p>
           </div>
 

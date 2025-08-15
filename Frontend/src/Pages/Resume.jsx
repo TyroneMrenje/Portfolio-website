@@ -18,7 +18,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 const Resume = () =>{
    
  const [width, setWidth] = useState(1200);
- const [numPages, setNumPages] = useState();
+
 const [pageNumber, setPageNumber] = useState(1);
 
 
@@ -27,26 +27,15 @@ const [pageNumber, setPageNumber] = useState(1);
   }, []);
 
   function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
+  
     setPageNumber(pageNumber);
   };
 
-  function changePage(offSet){
-    setPageNumber(prevPageNumber => prevPageNumber + offSet);
-  }
-
-  function changePageBack(){
-    changePage(-1)
-  }
-
-  function changePageNext(){
-    changePage(+1)
-  }
-
+  
   
 
    return(
-   <div className="w-full relative overflow-x-hidden scroll-smooth">
+   <div className="w-full overflow-x-hidden scroll-smooth">
       <App />
       <Navbar />
       <div className=" relative flex justify-center transition delay-50 duration-100 ease-in-out hover:-translate-y-1 hover:scale-110 mt-30 mr-10">
@@ -65,7 +54,7 @@ const [pageNumber, setPageNumber] = useState(1);
          file={pdf} 
          onLoadSuccess={onDocumentLoadSuccess}
          >
-         <Page pageNumber={pageNumber} scale={width > 767 ? 1.2 : 0.5 } />
+         <Page pageNumber={pageNumber} scale={width > 767 ? 1.5 : 0.55} />
          </Document>
       </div>
 
@@ -80,7 +69,7 @@ const [pageNumber, setPageNumber] = useState(1);
           Download CV
         </a>
       </div>
-      <div className="relative mt-10">
+      <div className="relative mt-20">
       <Footer />
       </div>
     </div>

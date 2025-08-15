@@ -10,7 +10,7 @@ const About_Me = () =>{
              <br />
              <br />
             I am a software developer specializing in creating web applications and system design.
-            I graduated from Chuka University with a degree in computer Science.
+            I graduated from <span className="text-orange-300 text-xl">Chuka University</span> with a degree in <span className="text-orange-300 text-xl">Computer Science</span>.
             <br />
             <br />
             My aim is to create software that can leave a long lasting   

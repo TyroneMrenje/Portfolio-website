@@ -38,13 +38,13 @@ const icons = [
 function Techstack() {
   return (
     <div className="flex flex-col relative w-full items-center justify-center ">
-       <p className="text-white text-4xl font-semibold">My Tech Stack</p>
-    <div className="grid sm:grid-cols-4 md:grid-cols-5 h-120 w-[70%] backdrop-blur bg-gray-800/20 rounded-md pt-10 mt-10 justify-items-center items-center">
+       <p className="text-white text-3xl md:text-4xl font-semibold">My Tech Stack</p>
+    <div className="grid grid-cols-4 md:grid-cols-5 h-120 w-[90%] md:w-[70%] backdrop-blur bg-gray-800/20 rounded-md py-5 my-5 md:py-10 md:my-10 justify-items-center items-center">
 
     {icons.map((Icon, index) => (
         <div
           key={index}
-          className="text-6xl text-white hover:text-blue-500 transition duration-300 ease-in-out"
+          className="md:text-6xl text-5xl text-white hover:text-blue-500 transition duration-300 ease-in-out"
         >
           {Icon}
         </div>
