@@ -14,7 +14,8 @@ const About_Me = () =>{
             <br />
             <br />
             My aim is to create software that can leave a long lasting   
-           impact on many people. I have a background in networking specializing in network setup, network diagnostic and troubleshooting hardware equipment.<br />    
+           impact on many people. I have a background in networking specializing in network setup, network diagnostics and troubleshooting hardware equipment.At the moment, I'm looking to partner with local businesses
+           and people,present web solutions that can assist with day to day needs and also promote their business. <br />    
         </p> 
         <br />
     </div>

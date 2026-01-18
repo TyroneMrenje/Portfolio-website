@@ -1,17 +1,17 @@
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadSlim } from "@tsparticles/slim"; 
-
+import { loadSlim } from "@tsparticles/slim";
 
 const App = () => {
   const [init, setInit] = useState(false);
+  const [bgColor, setBgColor] = useState("#161616");
+  const [particles, setParticles] = useState("#ffffff");
 
   
+
   useEffect(() => {
     initParticlesEngine(async (engine) => {
-    
       await loadSlim(engine);
-    
     }).then(() => {
       setInit(true);
     });
@@ -21,75 +21,52 @@ const App = () => {
     console.log(container);
   };
 
+  
+
   const options = useMemo(
     () => ({
       background: {
-        color: {
-          value: "#000000ff",
-        },
+        color: { value: bgColor },
       },
       fpsLimit: 200,
       interactivity: {
         events: {
-          onClick: {
-            enable: true,
-            mode: "push",
-          },
-          onHover: {
-            enable: false,
-            mode: "repulse",
-          },
+          onClick: { enable: true, mode: "push" },
+          onHover: { enable: false, mode: "repulse" },
         },
         modes: {
-          push: {
-            quantity: 4,
-          },
-          repulse: {
-            distance: 200,
-            duration: 0.4,
-          },
+          push: { quantity: 4 },
+          repulse: { distance: 200, duration: 0.4 },
         },
       },
       particles: {
-    color: {
-      value: "#ffffff",
-    },
-    links: {
-      color: "#ffffff",
-      distance: 100,
-      enable:false,
-      opacity: 0.8,
-      width: 1,
-    },
+        color: { value: particles },
+        links: {
+          color: "#ffffff",
+          distance: 100,
+          enable: false,
+          opacity: 0.8,
+          width: 1,
+        },
         move: {
           direction: "none",
           enable: true,
-          outModes: {
-            default:"bounce",
-          },
+          outModes: { default: "bounce" },
           random: true,
           speed: 0.8,
           straight: false,
         },
         number: {
-          density: {
-            enable: true,
-          },
+          density: { enable: true },
           value: 100,
         },
-        opacity: {
-          value: 1,
-        },
-        shape: {
-          type: "circle",
-        },
-        size: {
-          value: { min: 1, max: 5 },
-        },
+        opacity: { value: 1 },
+        shape: { type: "circle" },
+        size: { value: { min: 1, max: 5 } },
       },
       detectRetina: true,
     }),
-    [],
+    [bgColor, particles]
   );
 
   if (init) {

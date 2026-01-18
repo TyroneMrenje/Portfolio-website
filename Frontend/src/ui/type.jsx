@@ -4,14 +4,14 @@ import Typewriter from "typewriter-effect";
 function Type() {
   
   return (
-    <div className="relative text-2xl md:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-gray-300 via-blue-300 to-gray-300">
+    <div className="relative text-2xl md:text-3xl text-[#d1d6e0]">
       <Typewriter
         options={{
           strings: [
-            "Software  Writer", 
+            "Software Developer", 
             "Freelancer",
             "Network Technician",
-            "Upcoming VFX Artist"
+            "A.I Researcher",
         ],
           autoStart: true,
           loop: true,
