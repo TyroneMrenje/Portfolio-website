@@ -19,7 +19,8 @@ import {
   SiPostgresql,
   SiPostman, 
   SiGithub,
-  SiVuedotjs
+  SiVuedotjs,
+  SiLangchain
 } from "react-icons/si";
 
 export const tools=[
@@ -66,7 +67,8 @@ export const backend= [
        DiMysql,
        SiRedis,
        SiPostgresql,
-       DiDjango 
+       DiDjango,
+       SiLangchain
 
     ]
   }

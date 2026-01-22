@@ -2,8 +2,8 @@ import React from "react";
 
 const About_Me = () =>{
     return(
-    <div className="text-balance w-[75%] text-lg font-medium">
-        <p className="text-white/90">
+    <div className="text-balance p-2 mt-4 md:w-[75%] text-lg font-medium">
+        <p className="text-[#f0f7ff] text-lg">
             <span  className="text-xl">Hello, World</span>
              <br />
              My name is <span className="text-orange-300 text-md">Tyrone Mrenje</span> .I reside at Kwale, Kenya.
