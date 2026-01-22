@@ -4,8 +4,6 @@ import { loadSlim } from "@tsparticles/slim";
 
 const App = () => {
   const [init, setInit] = useState(false);
-  const [bgColor, setBgColor] = useState("#161616");
-  const [particles, setParticles] = useState("#ffffff");
 
   
 
@@ -26,7 +24,7 @@ const App = () => {
   const options = useMemo(
     () => ({
       background: {
-        color: { value: bgColor },
+        color: "#050505",
       },
       fpsLimit: 200,
       interactivity: {
@@ -40,12 +38,12 @@ const App = () => {
         },
       },
       particles: {
-        color: { value: particles },
+        color: "#ffffff",
         links: {
           color: "#ffffff",
           distance: 100,
           enable: false,
-          opacity: 0.8,
+          opacity: 0.5,
           width: 1,
         },
         move: {
@@ -53,7 +51,7 @@ const App = () => {
           enable: true,
           outModes: { default: "bounce" },
           random: true,
-          speed: 0.8,
+          speed: 1.8,
           straight: false,
         },
         number: {
@@ -66,16 +64,16 @@ const App = () => {
       },
       detectRetina: true,
     }),
-    [bgColor, particles]
   );
 
   if (init) {
     return (
-      <Particles
-        id="tsparticles"
-        particlesLoaded={particlesLoaded}
-        options={options}
-      />
+        <Particles
+          id="tsparticles"
+          particlesLoaded={particlesLoaded}
+          options={options}
+        />
+    
     );
   }
 

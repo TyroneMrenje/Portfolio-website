@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/40 z-50 border-b border-gray-900 shadow-lg">
       <div className="container mx-auto px-4">
-        <div className="flex h-20 items-center justify-between text-green-200 dark:text-white">
+        <div className="flex h-20 items-center justify-between text-green-300">
           <Link to="/" className="text-xl font-bold relative ml-5 mt-2 ">
             Tyrone Chama
           </Link>

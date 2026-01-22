@@ -52,13 +52,13 @@ function Footer() {
           </a>
           <a href="https://www.linkedin.com/in/tyrone-mrenje/" aria-label="Linkedin">
             <FaLinkedin
-              className="w-7 h-7 dark:invert transition duration-300 hover:-translate-y-1 hover:scale-110"
+              className="w-7 h-7  transition duration-300 hover:-translate-y-1 hover:scale-110"
               alt="LinkedIn"
             />
           </a>
           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tyronemrenje1985@gmail.com" aria-label="Gmail">
             <SiGmail
-              className="w-7 h-7 transition duration-300 hover:-translate-y-1 hover:scale-110 dark:invert"
+              className="w-7 h-7 transition duration-300 hover:-translate-y-1 hover:scale-110"
               alt="Email"
             />
           </a>

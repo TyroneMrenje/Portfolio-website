@@ -4,7 +4,7 @@ import Type from "../ui/type";
 import Navbar from "../Components/Navbar";
 import App from "../ui/particle";
 import Footer from "../Components/Footer";
-import { skillsCategory } from "../Components/skills";
+import { skillsCategory } from "../about/skills";
 import { FaGithub,FaLinkedin, } from "react-icons/fa";
 import {SiGmail } from "react-icons/si";
 
@@ -48,8 +48,8 @@ const FrontPage = () => {
             {
               skillsCategory.map(skill =>(
               <div className="bg-stone-800 rounded-lg p-3 h-40 w-90">
-              <div className="flex items-center gap-2">
-                <skill.Icon className="text-xl hover:text-blue-400" /> 
+              <div className="flex items-center gap-2 hover:text-blue-300">
+                <skill.Icon className="text-xl"/> 
                 <h1 className="text-xl font-semibold">{skill.name}</h1>
               </div>
               <div className="flex flex-wrap gap-3 mt-4 ">
@@ -67,15 +67,15 @@ const FrontPage = () => {
     <p className=" text-2xl md:text-4xl font-medium mb-10"> Lets connect </p>
     <div className="gap-5 flex flex-row">
       <a href="https://github.com/TyroneMrenje" aria-label="Github">
-      <FaGithub className="w-7 h-7 md:w-10 md:h-10 transition delay-70 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 dark:invert"/>
+      <FaGithub className="w-7 h-7 md:w-10 md:h-10 transition delay-70 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-indigo-500 "/>
       </a>
 
       <a href="https://www.linkedin.com/in/tyrone-mrenje/" aria-label="Linkedin">
-      <FaLinkedin className="w-7 h-7 md:w-10 md:h-10 dark:invert transition delay-70 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110"/>
+      <FaLinkedin className="w-7 h-7 md:w-10 md:h-10 transition delay-70 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-indigo-500"/>
       </a>
 
       <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tyronemrenje1985@gmail.com" aria-label="Gmail">
-      <SiGmail className=" w-7 h-7 md:w-10  md:h-10 transition delay-70 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 dark:invert"/>
+      <SiGmail className=" w-7 h-7 md:w-10  md:h-10 transition delay-30 duration-120 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-indigo-500"/>
       </a>             
     </div>
     </div> 
