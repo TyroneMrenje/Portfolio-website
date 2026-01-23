@@ -19,7 +19,7 @@ const FrontPage = () => {
       <Navbar />   
   
        <div className="flex flex-col relative h-screen items-center justify-center  md:mt-10">       
-          <img src={assets.profile_icon} className="h-50 w-50 md:w-69 md:h-70 object-cover rounded-full" />
+          <img src={assets.profile_icon} loading="lazy" className="h-50 w-50 md:w-69 md:h-70 object-cover rounded-full" />
           <div className="flex flex-col p-5 mx-auto md:gap-3 text-center space-y-2">
             <span className="text-[#d1d6e0] text-2xl md:text-3xl">Build.Innovate.Learn</span>
               <h1  className="text-green-300 text-4xl md:text-5xl  font-bold tracking-tight" >
@@ -77,7 +77,7 @@ const FrontPage = () => {
       <FaLinkedin className="w-7 h-7 md:w-10 md:h-10 transition delay-70 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-indigo-500"/>
       </a>
 
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tyronemrenje1985@gmail.com" aria-label="Gmail">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tyronemrenje@gmail.com" aria-label="Gmail">
       <SiGmail className=" w-7 h-7 md:w-10  md:h-10 transition delay-30 duration-120 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-indigo-500"/>
       </a>             
     </div>

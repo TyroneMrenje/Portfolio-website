@@ -25,7 +25,7 @@ function Footer() {
               alt="LinkedIn"
             />
           </a>
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tyronemrenje1985@gmail.com" aria-label="Gmail">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tyronemrenje@gmail.com" aria-label="Gmail">
             <SiGmail
               className="w-7 h-7 transition duration-300 hover:-translate-y-1 hover:scale-110"
               alt="Email"

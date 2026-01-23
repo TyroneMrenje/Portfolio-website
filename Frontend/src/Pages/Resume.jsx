@@ -81,7 +81,7 @@ const Resume = () =>{
               <FaLinkedin className="w-7 h-7 text-green-300 transition delay-70 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-indigo-500"/>
             </a>
             
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tyronemrenje1985@gmail.com" aria-label="Gmail">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tyronemrenje@gmail.com" aria-label="Gmail">
               <SiGmail className=" w-7 h-7 text-green-300 transition delay-30 duration-120 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-indigo-500"/>
             </a>  
 
