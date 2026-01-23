@@ -4,6 +4,7 @@ import lighticon from "../about/image.png"
 import { FaBookOpenReader } from "react-icons/fa6";
 import { MdEvent, MdSportsGymnastics } from "react-icons/md";
 import { IoMdFootball } from "react-icons/io";
+import { SiLetterboxd } from "react-icons/si";
 
 export const education = [
     {
@@ -110,6 +111,11 @@ export const hobbies = [
         title:MdSportsGymnastics,
         sport:"Gym",
         info:"Passionate about keeping in shape"
+    },
+    {
+        title:SiLetterboxd,
+        sport:"Cinemas",
+        info: "I judge your favorite movies on Letterboxd"
     }
 ]
 
