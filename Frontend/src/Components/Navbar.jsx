@@ -38,7 +38,7 @@ const Navbar = () => {
               to="/resume" 
               className="relative after:block after:h-[2px] after:bg-white after:scale-x-0 after:transition-transform after:duration-150 after:origin-left hover:after:scale-x-100 hover:text-white/80"
             >
-              Resume
+              Contact
             </Link>
           </div>
 
@@ -73,7 +73,7 @@ const Navbar = () => {
                 className="relative after:block after:h-[2px] after:bg-white after:scale-x-0 after:transition-transform after:duration-150 after:origin-left hover:after:scale-x-100"
                 onClick={toggleDropdown}
               >
-                Resume
+                Contact
               </Link>
             </div>
           </div>

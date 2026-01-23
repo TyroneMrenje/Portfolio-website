@@ -54,7 +54,7 @@ function Footer() {
             to="/resume" 
             className="text-lg transition duration-300 hover:text-orange-300"
           >
-            Resume
+            Contact
           </Link>        
         </div>
       </div>
