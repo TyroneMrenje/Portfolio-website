@@ -51,7 +51,7 @@ function Footer() {
             About
           </Link>
           <Link 
-            to="/resume" 
+            to="/contact" 
             className="text-lg transition duration-300 hover:text-orange-300"
           >
             Contact

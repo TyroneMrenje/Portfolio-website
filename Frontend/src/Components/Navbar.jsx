@@ -35,7 +35,7 @@ const Navbar = () => {
             </Link>
             <NavSeparator />
             <Link 
-              to="/resume" 
+              to="/contact" 
               className="relative after:block after:h-[2px] after:bg-white after:scale-x-0 after:transition-transform after:duration-150 after:origin-left hover:after:scale-x-100 hover:text-white/80"
             >
               Contact
@@ -69,7 +69,7 @@ const Navbar = () => {
                 About
               </Link>
               <Link
-                to="/resume"
+                to="/contact"
                 className="relative after:block after:h-[2px] after:bg-white after:scale-x-0 after:transition-transform after:duration-150 after:origin-left hover:after:scale-x-100"
                 onClick={toggleDropdown}
               >

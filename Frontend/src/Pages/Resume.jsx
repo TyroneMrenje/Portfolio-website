@@ -109,7 +109,7 @@ const Resume = () =>{
             placeholder="Write your message...">
            </textarea>
            <button type="submit" disabled={loading} className=" flex flex-row items-center justify-center gap-2 mt-4 p-2 w-[88%]  bg-green-300 border border-gray-100/10 rounded-md">
-            <span className="text-blue-900  text-lg font-bold "> {loading ? "Sending...": "Send message"}</span>
+            <span className="text-blue-900  text-lg font-bold"> {loading ? "Sending...": "Send message"}</span>
             <IoMdSend className="text-lg text-blue-900 font-bold"/>
            </button>
         </form>      
