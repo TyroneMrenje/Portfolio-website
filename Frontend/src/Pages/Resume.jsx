@@ -39,7 +39,7 @@ const Resume = () =>{
     
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_URL}/api/contact`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
