@@ -72,6 +72,7 @@ const App = () => {
           id="tsparticles"
           particlesLoaded={particlesLoaded}
           options={options}
+          key={location.pathname}
         />
     
     );
